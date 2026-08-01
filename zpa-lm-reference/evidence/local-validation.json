@@ -6,10 +6,10 @@
     "python": "3.13.5",
     "torch": "2.10.0+cpu"
   },
-  "evidence_class": "local-execution-confirmed; hosted-CI-pending-for-this-commit",
+  "evidence_class": "local-execution-confirmed; hosted-CI-status-external-to-this-file",
   "generated_at_utc": "2026-08-01T19:16:41.542260+00:00",
   "non_claims": [
-    "No hosted CI run for the reorganization commit is represented by this file.",
+    "This file records local execution only; hosted CI must be established from a visible run on the exact commit.",
     "The tiny overfit is not a language-model generalization result.",
     "No empirical superiority claim is promoted.",
     "Global pip check reported an unrelated host moviepy/pillow conflict; project dependency constraints passed independently."

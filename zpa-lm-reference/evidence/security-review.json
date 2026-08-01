@@ -168,10 +168,10 @@
         "sha256": "615fb08daddf6eac2f20a775e7587291e7e810639b69686913be66afa8caf01d"
       },
       {
-        "bytes": 1738,
+        "bytes": 1777,
         "path": "zpa-lm-reference/evidence/local-validation.json",
         "review": "reviewed",
-        "sha256": "556e3dadd26300273b0cc5b5037c9bc2622c15d7d0ad7606e37bd791cb4baa5e"
+        "sha256": "7f4db7840e324192ea76bee042b956dad72661e90396575656f38517da94afe0"
       },
       {
         "bytes": 99,
