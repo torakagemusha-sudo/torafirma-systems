@@ -32,7 +32,7 @@
     "causal_row_sum_max_abs_error": 0.0,
     "causal_upper_triangle_max_abs": 0.0,
     "raw_diagonal_max_abs_error": 0.0,
-    "raw_min_eigenvalue": -2.8492833092919057e-16,
+    "raw_min_eigenvalue": -1.244664094013359e-16,
     "raw_symmetry_max_abs_error": 0.0,
     "trainable_parameter_count": 0
   },

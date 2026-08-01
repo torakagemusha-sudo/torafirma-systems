@@ -1,9 +1,0 @@
-include README.md
-include NOTICE.md
-include CITATION.cff
-include CLAIMS_AND_LIMITS.md
-include CONFORMANCE.md
-include FAILURE_REGISTRY.md
-include EVIDENCE.md
-include REPRODUCIBILITY.md
-include CHANGELOG.md

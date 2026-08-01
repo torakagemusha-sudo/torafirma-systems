@@ -10,7 +10,7 @@ date-released: 2026-08-01
 abstract: >-
   Paper-conformant reference implementation of the static ZPA-LM divisor/Fisher
   token-mixing mechanism, with conformance tests and explicit claim boundaries.
-repository-code: "https://github.com/torakagemusha-sudo/torafirma-systems/tree/zpa-lm-reference-v0.1.0"
+repository-code: "https://github.com/torakagemusha-sudo/torafirma-systems/tree/main/zpa-lm-reference"
 preferred-citation:
   type: report
   title: "ZPA-LM: Parameter-Free Attention via the Divisor Kernel"

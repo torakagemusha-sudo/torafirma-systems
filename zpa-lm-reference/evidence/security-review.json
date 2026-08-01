@@ -1,0 +1,322 @@
+{
+  "checks": {
+    "compileall": {
+      "passed": true
+    },
+    "conformance_audit": {
+      "integer_pair_limit": 128,
+      "passed": true
+    },
+    "filesystem": {
+      "large_files_over_1mb": [],
+      "passed": true,
+      "symlinks": []
+    },
+    "global_environment_pip_check": {
+      "classification": "host-environment-only; unrelated moviepy/pillow conflict, not attributed to this package",
+      "lines": [
+        "moviepy 2.2.1 has requirement pillow<12.0,>=9.2.0, but you have pillow 12.2.0."
+      ]
+    },
+    "package_dependency_constraints": {
+      "lines": [
+        "numpy 2.3.5 satisfies >=1.24",
+        "torch 2.10.0+cpu satisfies >=2.2",
+        "pytest 9.0.2 satisfies >=8.0"
+      ],
+      "passed": true
+    },
+    "public_scope_executable_scan": {
+      "hits": [],
+      "passed": true
+    },
+    "pytest": {
+      "passed": true,
+      "tests": 19
+    },
+    "python_ast_scan": {
+      "findings": [],
+      "passed": true
+    },
+    "secret_scan_current_tree": {
+      "hits": [],
+      "passed": true
+    },
+    "secret_scan_release_bundle_history": {
+      "hits": [],
+      "passed": true
+    },
+    "workflow": {
+      "action_refs": [
+        "actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405"
+      ],
+      "all_external_actions_pinned_to_full_sha": true,
+      "no_pull_request_target": true,
+      "no_secret_context": true,
+      "no_shell_downloaders": true,
+      "path_scoped": true,
+      "permissions_contents_read": true,
+      "persist_credentials_false": true,
+      "timeout_set": true
+    }
+  },
+  "decision": {
+    "merge_blockers_found": 0,
+    "reportable_vulnerabilities_found": 0,
+    "status": "focused review passed with documented resource and supply-chain residual risks"
+  },
+  "findings": [],
+  "generated_at_utc": "2026-08-01T19:17:57.896846+00:00",
+  "hardening_applied": [
+    "moved project under a bounded self-contained directory",
+    "pinned GitHub Actions to full immutable commit SHAs",
+    "disabled checkout credential persistence",
+    "retained read-only workflow token permissions",
+    "added workflow path scoping, timeout, dependency consistency, and compile gates",
+    "expanded .gitignore for local credentials and private-key material",
+    "rejected duplicate, empty, boolean, non-integer, and coerced JSON codebook values",
+    "consolidated claim, evidence, failure, reproduction, security, and rights guidance"
+  ],
+  "residual_risks": [
+    {
+      "control": "bound integer magnitude at any external API boundary; the reference library itself exposes no network endpoint",
+      "id": "R1",
+      "issue": "trial-division factorization is CPU-unbounded for very large integers",
+      "severity": "low-to-moderate when exposed to untrusted input"
+    },
+    {
+      "control": "bound batch size, sequence length, and exponent width before calling the router",
+      "id": "R2",
+      "issue": "pairwise routing allocates O(B*T^2*P) intermediates and O(B*T^2) weights",
+      "severity": "low-to-moderate when exposed to untrusted dimensions"
+    },
+    {
+      "control": "use a reviewed lockfile or hashed requirements for production deployment; CI remains a compatibility matrix rather than a hermetic build",
+      "id": "R3",
+      "issue": "Python dependencies use version ranges rather than a hash-locked deployment set",
+      "severity": "supply-chain hygiene"
+    }
+  ],
+  "schema": "torafirma-security-review/v1",
+  "scope": {
+    "coverage": [
+      {
+        "bytes": 1571,
+        "path": ".github/workflows/zpa-lm-reference.yml",
+        "review": "reviewed",
+        "sha256": "6b855f51e3bc7bb46e91647214f245d0ea4d3e7ff2ecc5ca76727d4f9cdfd07f"
+      },
+      {
+        "bytes": 251,
+        "path": ".gitignore",
+        "review": "reviewed",
+        "sha256": "fa2c426412874f099870c6f2057f01fbcedd8fe243bfcb36528c616bc699f042"
+      },
+      {
+        "bytes": 1221,
+        "path": "README.md",
+        "review": "reviewed",
+        "sha256": "5fbef966bb3ffa7e9b551fd1aa3f60d4bf6172ce329163918a710fc67ca4bbf5"
+      },
+      {
+        "bytes": 903,
+        "path": "zpa-lm-reference/CITATION.cff",
+        "review": "reviewed",
+        "sha256": "8a58372670c475e22b3b42b69b0e9967724c15dc86c0145e54ca406bf8d66e7f"
+      },
+      {
+        "bytes": 54,
+        "path": "zpa-lm-reference/MANIFEST.in",
+        "review": "reviewed",
+        "sha256": "5003448e8846b67362f7297f60b2d8e3e0c77bfdbd76c7b8320a2a283bbc9cf5"
+      },
+      {
+        "bytes": 591,
+        "path": "zpa-lm-reference/NOTICE",
+        "review": "reviewed",
+        "sha256": "2c2c1e6cea8420d1153da7892f911b067834b996d9044ee8326d1dcbfbb6e007"
+      },
+      {
+        "bytes": 16886,
+        "path": "zpa-lm-reference/README.md",
+        "review": "reviewed",
+        "sha256": "e110fdd0f5b7d5092e3af26b69c56aface086c6958949122915fe75c6323b77c"
+      },
+      {
+        "bytes": null,
+        "path": "zpa-lm-reference/evidence/SOURCE_MANIFEST.sha256",
+        "review": "generated-evidence-self-excluded-from-hash",
+        "sha256": null
+      },
+      {
+        "bytes": 1245,
+        "path": "zpa-lm-reference/evidence/audit.json",
+        "review": "reviewed",
+        "sha256": "a997b874301004613e4eef80ca65c3e8421fe79664827ecf264a14d3eb9ab0da"
+      },
+      {
+        "bytes": 920,
+        "path": "zpa-lm-reference/evidence/causal-matrix.txt",
+        "review": "reviewed",
+        "sha256": "7a952244983194b46e006a0e6ec747f5d8bd74bc7557599b359260ce1c17236b"
+      },
+      {
+        "bytes": 66,
+        "path": "zpa-lm-reference/evidence/keystone.txt",
+        "review": "reviewed",
+        "sha256": "615fb08daddf6eac2f20a775e7587291e7e810639b69686913be66afa8caf01d"
+      },
+      {
+        "bytes": 1777,
+        "path": "zpa-lm-reference/evidence/local-validation.json",
+        "review": "reviewed",
+        "sha256": "7f4db7840e324192ea76bee042b956dad72661e90396575656f38517da94afe0"
+      },
+      {
+        "bytes": 99,
+        "path": "zpa-lm-reference/evidence/pytest.txt",
+        "review": "reviewed",
+        "sha256": "9d26ef94dee86429ff7e44bd0f924f4d782d8ddb08ec9ca2470f37480cb113e2"
+      },
+      {
+        "bytes": null,
+        "path": "zpa-lm-reference/evidence/security-review.json",
+        "review": "generated-evidence-self-excluded-from-hash",
+        "sha256": null
+      },
+      {
+        "bytes": 209,
+        "path": "zpa-lm-reference/evidence/tiny-overfit.json",
+        "review": "reviewed",
+        "sha256": "99f74817874838258e7b0415600c5f6eb5b8add071b424dd4acf97caf41ca543"
+      },
+      {
+        "bytes": 293,
+        "path": "zpa-lm-reference/evidence/wheel-smoke.txt",
+        "review": "reviewed",
+        "sha256": "3cc041ab64aa6959b1833608279e80eb3fd6fbfb808a6f3e9a9b84e0701292e6"
+      },
+      {
+        "bytes": 1058,
+        "path": "zpa-lm-reference/examples/inspect_causal_matrix.py",
+        "review": "reviewed",
+        "sha256": "0ddd11638c8cdebfc89473284df012ad209e129dd96c268198fdd1834a7a82ba"
+      },
+      {
+        "bytes": 980,
+        "path": "zpa-lm-reference/examples/reproduce_keystone.py",
+        "review": "reviewed",
+        "sha256": "71d6b5caf86d138776eaf4346220ec8d1a1ffa6bbc4d3a7be91d4579049f35e3"
+      },
+      {
+        "bytes": 2882,
+        "path": "zpa-lm-reference/examples/tiny_overfit.py",
+        "review": "reviewed",
+        "sha256": "671a66902a26cedc053fa61fcff55c6db7f95f3f8f0c7b01d4b636e9fcb0db01"
+      },
+      {
+        "bytes": 326,
+        "path": "zpa-lm-reference/examples/toy_codebook.json",
+        "review": "reviewed",
+        "sha256": "549df9476728210569d4db6981bb61a423e9cbef6a0f5b4a7a92ce12104b9bcb"
+      },
+      {
+        "bytes": 1407,
+        "path": "zpa-lm-reference/pyproject.toml",
+        "review": "reviewed",
+        "sha256": "366f534b914a6b4202d8883108dfa785b4ce3219010a43e66f1f90e73075722b"
+      },
+      {
+        "bytes": 1095,
+        "path": "zpa-lm-reference/src/zpa_lm_reference/__init__.py",
+        "review": "reviewed",
+        "sha256": "620876cdcd94b6fc836268456aa1c6cf3de38b63ca775f66aba9918c5962d8ad"
+      },
+      {
+        "bytes": 4407,
+        "path": "zpa-lm-reference/src/zpa_lm_reference/audit.py",
+        "review": "reviewed",
+        "sha256": "61bdeea1ac04be9643884fdb0011fb7732fb118e15fc1bafcf833078c850f9f1"
+      },
+      {
+        "bytes": 4608,
+        "path": "zpa-lm-reference/src/zpa_lm_reference/codebook.py",
+        "review": "reviewed",
+        "sha256": "ee835c834f8abdc5a3628aef679254b0774740df61c138bb72b34ed9daaf8eb0"
+      },
+      {
+        "bytes": 5865,
+        "path": "zpa-lm-reference/src/zpa_lm_reference/geometry.py",
+        "review": "reviewed",
+        "sha256": "f336384502aeee7b20b17b825457002049dd3b7cf21247e5783564dd198905a2"
+      },
+      {
+        "bytes": 5628,
+        "path": "zpa-lm-reference/src/zpa_lm_reference/model.py",
+        "review": "reviewed",
+        "sha256": "4096e9431bcbf08cd6f38332ec0f94ea502c398653ee63c7f7b8d66a7bbeaf41"
+      },
+      {
+        "bytes": 3839,
+        "path": "zpa-lm-reference/src/zpa_lm_reference/router.py",
+        "review": "reviewed",
+        "sha256": "29a609c10162935630c4f5d85e399cee91f1004d2266a5ed1a716df19dadde86"
+      },
+      {
+        "bytes": 633,
+        "path": "zpa-lm-reference/tests/test_audit.py",
+        "review": "reviewed",
+        "sha256": "efb8971fa36851f4362c903d849658ef4669192e0b53fd6e279441a17618babf"
+      },
+      {
+        "bytes": 2424,
+        "path": "zpa-lm-reference/tests/test_codebook.py",
+        "review": "reviewed",
+        "sha256": "221927c51aca6465947dc7edfcaf565c94d22fe9fee30970c25c5911c0c06a4a"
+      },
+      {
+        "bytes": 2600,
+        "path": "zpa-lm-reference/tests/test_geometry.py",
+        "review": "reviewed",
+        "sha256": "d9db8902416b0f89aff05f3d391345695ed0e5bb405a6c7e3555b425717bf449"
+      },
+      {
+        "bytes": 2007,
+        "path": "zpa-lm-reference/tests/test_model.py",
+        "review": "reviewed",
+        "sha256": "c35fffc7835a59d413a8e366f55fb67a333371dd00b8aa956b5cbf1cf8f3bbc6"
+      },
+      {
+        "bytes": 2058,
+        "path": "zpa-lm-reference/tests/test_router.py",
+        "review": "reviewed",
+        "sha256": "7327f5d8fc897fd274dfe365202fac306727a255fdd4a22fd73ab69691e75f5a"
+      }
+    ],
+    "files_reviewed": 32,
+    "history_commits_scanned_from_exact_release_bundle": [
+      "8cbec03513d16514f222ae7009ad39c50859295b",
+      "f8ecf2e1cefd480e8b99c180bcfd605439e97840",
+      "e49bee89fb0b88132822d95b70cc108513be0a26"
+    ],
+    "project": "zpa-lm-reference",
+    "repository": "torakagemusha-sudo/torafirma-systems"
+  },
+  "threat_model": {
+    "deployment": "local mathematical and PyTorch reference library; no network service",
+    "primary_risks": [
+      "malformed-input integrity failure",
+      "CPU or memory exhaustion from unbounded mathematical dimensions",
+      "credential leakage or public/private scope contamination",
+      "CI and dependency supply-chain compromise"
+    ],
+    "untrusted_inputs_considered": [
+      "local JSON codebooks",
+      "integer kernel arguments",
+      "token and exponent tensors",
+      "CLI iteration and training limits",
+      "pull-request code executed by GitHub Actions"
+    ]
+  }
+}
