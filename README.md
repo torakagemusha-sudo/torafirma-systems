@@ -10,6 +10,9 @@ A paper-conformant reference implementation of the static divisor/Fisher token m
 
 The public project is deliberately bounded to the disclosed `fisher_dict` mechanism. Later private research—including corpus-fitted or hybrid dictionaries, context-state extensions, learned modulation, optimized kernels, reservoirs, and experiment infrastructure—is not mirrored here.
 
+### [resources](resources/)
+- Documents and educational materials
+  
 ## Repository policy
 
 Each public project is kept in its own self-contained directory with its own package metadata, tests, evidence, citation record, claim boundaries, and rights notice. Repository-level GitHub workflows remain under `.github/workflows/`, as required by GitHub Actions.
