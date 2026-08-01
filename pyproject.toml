@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zpa-lm-reference"
+version = "0.1.0"
+description = "Paper-conformant reference implementation of the ZPA-LM divisor/Fisher token mixer"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Thomas Helm"},
+]
+keywords = [
+  "attention",
+  "divisor-kernel",
+  "fisher-rao",
+  "language-model",
+  "number-theory",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.2",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+zpa-reference-audit = "zpa_lm_reference.audit:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

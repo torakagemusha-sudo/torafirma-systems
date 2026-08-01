@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite the ZPA-LM technical note and this reference implementation."
+title: "ZPA-LM Reference: Divisor/Fisher Token Mixer"
+type: software
+authors:
+  - family-names: Helm
+    given-names: Thomas
+version: 0.1.0
+date-released: 2026-08-01
+abstract: >-
+  Paper-conformant reference implementation of the static ZPA-LM divisor/Fisher
+  token-mixing mechanism, with conformance tests and explicit claim boundaries.
+repository-code: "https://github.com/torakagemusha-sudo/torafirma-systems/tree/zpa-lm-reference-v0.1.0"
+preferred-citation:
+  type: report
+  title: "ZPA-LM: Parameter-Free Attention via the Divisor Kernel"
+  subtitle: "Fisher-Rao Geometry, the Token-to-Prime Dictionary Problem, and a Diagnostic Catalogue of Permanent Failure Modes"
+  authors:
+    - family-names: Helm
+      given-names: Thomas
+  institution:
+    name: ToraFirma Systems
+  year: 2026
+  month: 7
