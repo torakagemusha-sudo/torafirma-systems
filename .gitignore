@@ -11,3 +11,14 @@ dist/
 coverage.xml
 .coverage
 .DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets/

@@ -1,0 +1,6 @@
+Built and installed wheel from reorganized source tree.
+Observed package version: 0.1.0
+Executed run_audit(limit=16).
+Observed router trainable parameter count: 0
+Observed maximum closed-form/direct-BC error: 0.0
+Wheel SHA-256: 21941f883b24abece0211df4383137decf53f47298271a5038f181897bab44e0

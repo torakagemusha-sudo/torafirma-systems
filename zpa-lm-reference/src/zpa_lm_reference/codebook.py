@@ -33,7 +33,10 @@ class ExponentCodebook:
             raise ValueError("tokens and integers must have the same length")
         if len(set(self.tokens)) != len(self.tokens):
             raise ValueError("token names must be unique")
-        if any(isinstance(value, bool) or not isinstance(value, int) or value < 1 for value in self.integers):
+        if any(
+            isinstance(value, bool) or not isinstance(value, int) or value < 1
+            for value in self.integers
+        ):
             raise ValueError("all integer codes must be positive integers")
         if self.exponents.shape != (len(self.tokens), len(self.primes)):
             raise ValueError(
@@ -61,7 +64,19 @@ class ExponentCodebook:
         for entry in payload["tokens"]:
             if not isinstance(entry, dict) or "token" not in entry or "integer" not in entry:
                 raise ValueError("each token entry must contain 'token' and 'integer'")
-            mapping[str(entry["token"])] = int(entry["integer"])
+
+            token = entry["token"]
+            integer = entry["integer"]
+            if not isinstance(token, str) or not token:
+                raise ValueError("each token must be a non-empty string")
+            if token in mapping:
+                raise ValueError(f"duplicate token in codebook JSON: {token!r}")
+            if isinstance(integer, bool) or not isinstance(integer, int) or integer < 1:
+                raise ValueError(
+                    "each integer code must be a positive JSON integer; "
+                    f"received {integer!r} for token {token!r}"
+                )
+            mapping[token] = integer
         return cls.from_mapping(mapping)
 
     def to_torch(

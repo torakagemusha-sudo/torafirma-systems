@@ -1,0 +1,41 @@
+{
+  "change_scope": "monorepo relocation, documentation consolidation, input and CI hardening",
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu"
+  },
+  "evidence_class": "local-execution-confirmed; hosted-CI-pending-for-this-commit",
+  "generated_at_utc": "2026-08-01T19:16:41.542260+00:00",
+  "non_claims": [
+    "No hosted CI run for the reorganization commit is represented by this file.",
+    "The tiny overfit is not a language-model generalization result.",
+    "No empirical superiority claim is promoted.",
+    "Global pip check reported an unrelated host moviepy/pillow conflict; project dependency constraints passed independently."
+  ],
+  "release": "0.1.0",
+  "results": {
+    "causal_row_sum_max_abs_error": 0.0,
+    "causal_upper_triangle_max_abs": 0.0,
+    "compileall": "passed",
+    "editable_install_no_build_isolation": "passed",
+    "exponent_equivalence_max_abs_error": 2.220446049250313e-16,
+    "keystone_max_abs_error": 0.0,
+    "keystone_pairs_checked": 16384,
+    "package_dependency_constraints": "passed for numpy, torch, pytest",
+    "pytest": "19 passed",
+    "query_key_trainable_parameters": 0,
+    "router_trainable_parameters": 0,
+    "security_files_reviewed": 32,
+    "security_merge_blockers": 0,
+    "security_reportable_vulnerabilities": 0,
+    "tiny_overfit_final_loss": 1.608498496352695e-05,
+    "tiny_overfit_initial_loss": 19.03189468383789,
+    "tiny_overfit_next_token_accuracy": 1.0,
+    "wheel_build": "passed",
+    "wheel_import_smoke": "passed",
+    "wheel_sha256": "21941f883b24abece0211df4383137decf53f47298271a5038f181897bab44e0"
+  },
+  "schema": "zpa-lm-reference-local-validation/v2"
+}
