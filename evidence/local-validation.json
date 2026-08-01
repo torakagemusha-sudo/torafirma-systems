@@ -1,0 +1,30 @@
+{
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu"
+  },
+  "evidence_class": "local-execution-only",
+  "non_claims": [
+    "No hosted CI run is represented by this file.",
+    "The tiny overfit is not a language-model generalization result.",
+    "No empirical superiority claim is promoted."
+  ],
+  "release": "0.1.0",
+  "results": {
+    "causal_row_sum_max_abs_error": 0.0,
+    "causal_upper_triangle_max_abs": 0.0,
+    "exponent_equivalence_max_abs_error": 2.220446049250313e-16,
+    "keystone_max_abs_error": 0.0,
+    "keystone_pairs_checked": 16384,
+    "pytest": "16 passed",
+    "router_trainable_parameters": 0,
+    "tiny_overfit_final_loss": 1.608498496352695e-05,
+    "tiny_overfit_initial_loss": 19.03189468383789,
+    "tiny_overfit_next_token_accuracy": 1.0,
+    "wheel_build": "passed",
+    "wheel_import_smoke": "passed"
+  },
+  "schema": "zpa-lm-reference-local-validation/v1"
+}

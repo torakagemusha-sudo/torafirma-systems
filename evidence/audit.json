@@ -1,0 +1,44 @@
+{
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu"
+  },
+  "keystone": {
+    "max_abs_error_closed_form_vs_direct_bc": 0.0,
+    "max_abs_error_closed_form_vs_exponent_product": 2.220446049250313e-16
+  },
+  "model": {
+    "forward_finite": true,
+    "gradient_parameter_count": 8,
+    "gradient_parameters": [
+      "token_embedding.weight",
+      "position_embedding.weight",
+      "blocks.0.mix_norm.weight",
+      "blocks.0.value_projection.weight",
+      "blocks.0.ff_norm.weight",
+      "blocks.0.feedforward.up.weight",
+      "blocks.0.feedforward.down.weight",
+      "final_norm.weight"
+    ],
+    "loss": 16.28665542602539,
+    "model_trainable": 8136,
+    "query_key_trainable": 0,
+    "router_trainable": 0
+  },
+  "package_version": "0.1.0",
+  "router": {
+    "causal_row_sum_max_abs_error": 0.0,
+    "causal_upper_triangle_max_abs": 0.0,
+    "raw_diagonal_max_abs_error": 0.0,
+    "raw_min_eigenvalue": -2.8492833092919057e-16,
+    "raw_symmetry_max_abs_error": 0.0,
+    "trainable_parameter_count": 0
+  },
+  "schema": "zpa-lm-reference-audit/v1",
+  "scope": {
+    "integer_pair_count": 16384,
+    "integer_pair_limit_inclusive": 128
+  }
+}

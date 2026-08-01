@@ -1,0 +1,8 @@
+{
+  "final_loss": 1.608498496352695e-05,
+  "initial_loss": 19.03189468383789,
+  "next_token_accuracy": 1.0,
+  "router_trainable_parameters": 0,
+  "schema": "zpa-lm-reference-tiny-overfit/v1",
+  "steps": 120
+}

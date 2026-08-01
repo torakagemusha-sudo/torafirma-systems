@@ -1,0 +1,12 @@
+{
+  "tokens": [
+    {"token": "<pad>", "integer": 1},
+    {"token": "dog", "integer": 60},
+    {"token": "wolf", "integer": 84},
+    {"token": "cat", "integer": 330},
+    {"token": "leash", "integer": 420},
+    {"token": "car", "integer": 2873},
+    {"token": "road", "integer": 4199},
+    {"token": ".", "integer": 30}
+  ]
+}

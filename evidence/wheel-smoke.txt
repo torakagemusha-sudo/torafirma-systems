@@ -1,0 +1,7 @@
+Built zpa_lm_reference-0.1.0-py3-none-any.whl from the source tree.
+Installed the wheel into an isolated target directory with dependencies supplied by the host environment.
+Imported zpa_lm_reference from the installed wheel.
+Observed package version: 0.1.0
+Executed run_audit(limit=16).
+Observed router trainable parameter count: 0
+Observed maximum closed-form/direct-BC error: 0.0
