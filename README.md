@@ -16,7 +16,9 @@ The public project is deliberately bounded to the disclosed `fisher_dict` mechan
 
 ## Repository policy
 
-Each public project is kept in its own self-contained directory with its own package metadata, tests, evidence, citation record, claim boundaries, and rights notice. 
+Each public project is kept in its own self-contained directory with its own package metadata, tests, evidence, citation record, claim boundaries, and rights notice.
+
+Repository history, release artefacts, citation records, and per-project rights notices establish publication provenance and define the applicable reuse terms.
 
 ## Evidence Policy
 
