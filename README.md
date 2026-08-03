@@ -20,6 +20,12 @@ Each public project is kept in its own self-contained directory with its own pac
 
 Repository history, release artefacts, citation records, and per-project rights notices establish publication provenance and define the applicable reuse terms.
 
+### Good-faith access
+
+This repository is published in good faith as a courtesy to the scientific and mathematical community, to support independent verification, reproduction, and constructive peer review. Reciprocal good faith is expected: preserve attribution and provenance, represent the work accurately, respect the stated licence and claim boundaries, and report substantive findings where practical.
+
+Public release of future reference implementations remains discretionary. If this access is materially abused through systematic unattributed reuse, misrepresentation, or circumvention of the stated terms, future implementations may remain private and be made available only on request to qualified reviewers, assessors, and research collaborators.
+
 ## Evidence Policy
 
 **Published evidence is classified explicitly. Algebraic results, local execution, hosted CI, and open empirical questions are not treated as interchangeable forms of support.**
