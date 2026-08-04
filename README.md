@@ -14,6 +14,10 @@ The public project is deliberately bounded to the disclosed `fisher_dict` mechan
 
 - Documents and educational materials
 
+### [Firmastate-IDE](www.firmastate-ide.app)
+
+Pre commercial implementation of our governed state machine IDE, open for public engagement and feedback. 
+
 ## Repository policy
 
 Each public project is kept in its own self-contained directory with its own package metadata, tests, evidence, citation record, claim boundaries, and rights notice.
