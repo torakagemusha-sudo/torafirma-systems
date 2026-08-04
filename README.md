@@ -14,7 +14,9 @@ The public project is deliberately bounded to the disclosed `fisher_dict` mechan
 
 - Documents and educational materials
 
-### [Firmastate-IDE](www.firmastate-ide.app)
+### Firmastate-IDE 
+
+Available at www.firmastate-ide.app
 
 Pre commercial implementation of our governed state machine IDE, open for public engagement and feedback. 
 
