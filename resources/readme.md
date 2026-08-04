@@ -2,7 +2,7 @@
 
 ---
 
-### Mathematics for Systems Research and Engineering
+### [Mathematics for Systems Research and Engineering](resources/Mathematics_for_Systems_Research_and_Engineering_Public_Edition_2026.pdf)
 
 is a public, **self-directed curriculum** for *developers, engineers, researchers,* and independent practitioners working across *scientific computing, artificial intelligence, control systems, simulation, and mathematical systems design*.
 
