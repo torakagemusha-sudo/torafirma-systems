@@ -1,4 +1,4 @@
-# ToraFirma Systems
+# Torafirma Systems
 
 Public reference implementations, release information, and reproducible research artefacts from ToraFirma Systems.
 
