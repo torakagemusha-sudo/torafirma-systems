@@ -1,4 +1,4 @@
-### This Folder is for Information & Educational publications
+### Resources
 
 ---
 
