@@ -8,13 +8,18 @@ Public release of future reference implementations remains discretionary. If thi
 ### [ZPA-LM Reference](zpa-lm-reference/)
 A paper-conformant reference implementation of the static divisor/Fisher token mixer described in *ZPA-LM: Parameter-Free Attention via the Divisor Kernel*.
 
+### [ORBIT](orbit/)
+Public benchmark material for ORBIT. The current report covers full-vocabulary and reduced-vocabulary WikiText-2 results, character-level results, matched parameter-budget comparisons, and single-core CPU performance.
+
+- [ORBIT Public Benchmark Report - 11 September 2026](orbit/ORBIT_Public_Benchmark_Report_2026-09-11.pdf)
+
 ### [resources](resources/)
 - Documents and educational materials
 
-### Firmastate-IDE 
+### Firmastate-IDE
 Available at www.firmastate-ide.app
 
-Pre commercial implementation of our governed state machine IDE, open for public engagement and feedback. 
+Pre commercial implementation of our governed state machine IDE, open for public engagement and feedback.
 
 ## Repository policy
 Each public project is kept in its own self-contained directory with its own package metadata, tests, evidence, citation record, claim boundaries, and rights notice.
@@ -24,4 +29,4 @@ Repository history, release artefacts, citation records, and per-project rights 
 ## Evidence Policy
 **Published evidence is classified explicitly. Algebraic results, local execution, hosted CI, and open empirical questions are not treated as interchangeable forms of support.**
 
-Copyright © 2026 ToraFirma Systems. Rights and reuse terms are stated inside each project directory.
+Copyright © 2026 Torafirma Systems. Rights and reuse terms are stated inside each project directory.
