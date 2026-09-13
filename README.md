@@ -13,6 +13,9 @@ Public benchmark material for ORBIT. The current report covers full-vocabulary a
 
 - [ORBIT Public Benchmark Report - 11 September 2026](orbit/ORBIT_Public_Benchmark_Report_2026-09-11.pdf)
 
+### [Arithmetic Clock](arithmetic-clock/)
+Lean 4 proof pack for the finite arithmetic clock on the divisor lattice of 60, including pinned dependencies, claim map, negative control, build artefacts, and seven verification certificates.
+
 ### [resources](resources/)
 - Documents and educational materials
 

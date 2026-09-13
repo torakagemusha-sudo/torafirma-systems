@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "T1",
+      "kind": "main_theorem",
+      "endpoints": [
+        "ArithmeticClock.DivisorGram.kernel_gram_factorization",
+        "ArithmeticClock.DivisorGram.kernel_posDef",
+        "ArithmeticClock.DivisorGram.kernel_det"
+      ]
+    },
+    {
+      "id": "C-MOBIUS",
+      "kind": "corollary",
+      "endpoints": [
+        "ArithmeticClock.DivisorGram.mobiusIncidence",
+        "ArithmeticClock.DivisorGram.precisionFactor",
+        "ArithmeticClock.DivisorGram.mobius_mul_incidence",
+        "ArithmeticClock.DivisorGram.incidence_mul_mobius",
+        "ArithmeticClock.DivisorGram.incidence_inverse",
+        "ArithmeticClock.DivisorGram.feature_mul_precisionFactor",
+        "ArithmeticClock.DivisorGram.precisionFactor_mul_feature",
+        "ArithmeticClock.DivisorGram.feature_inverse",
+        "ArithmeticClock.DivisorGram.kernel_inverse_factorization"
+      ]
+    },
+    {
+      "id": "S-ARITHMETIC-60",
+      "kind": "support",
+      "endpoints": [
+        "ArithmeticClock.RealClock60.divisor_enumeration",
+        "ArithmeticClock.RealClock60.divisor_injective",
+        "ArithmeticClock.RealClock60.complementary_planes",
+        "ArithmeticClock.RealClock60.phase_eq_delta"
+      ]
+    },
+    {
+      "id": "T2",
+      "kind": "main_theorem",
+      "endpoints": [
+        "ArithmeticClock.RealClock60.character_integer",
+        "ArithmeticClock.RealClock60.clock_basis_change",
+        "ArithmeticClock.RealClock60.divisor_enumeration",
+        "ArithmeticClock.RealClock60.divisor_injective",
+        "ArithmeticClock.RealClock60.phase_eq_delta",
+        "ArithmeticClock.DenseTwirl.planeBasis_unitary",
+        "ArithmeticClock.DenseTwirl.planeBasis_diagonalizes",
+        "ArithmeticClock.DenseTwirl.basis_unitary",
+        "ArithmeticClock.RealClock60.flow_integer_eq_clock",
+        "ArithmeticClock.RealClock60.integer_clock_basis_change"
+      ]
+    },
+    {
+      "id": "S-REAL-FLOW",
+      "kind": "support",
+      "endpoints": [
+        "ArithmeticClock.RealClock60.flow_zero",
+        "ArithmeticClock.RealClock60.flow_add",
+        "ArithmeticClock.RealClock60.flow_transpose",
+        "ArithmeticClock.RealClock60.flow_orthogonal",
+        "ArithmeticClock.RealClock60.continuous_flow"
+      ]
+    },
+    {
+      "id": "T3",
+      "kind": "main_theorem",
+      "endpoints": [
+        "ArithmeticClock.DenseTwirl.spectralCarrier_entry_ne_zero",
+        "ArithmeticClock.DenseTwirl.actual_dense_return_iff",
+        "ArithmeticClock.RealClock60.realOrbit_return_iff",
+        "ArithmeticClock.RealClock60.realOrbit_sampled_returns",
+        "ArithmeticClock.RealClock60.integer_flowOrbit_eq_realOrbit"
+      ]
+    },
+    {
+      "id": "T4",
+      "kind": "main_theorem",
+      "endpoints": [
+        "ArithmeticClock.CyclicTwirl.twirl_apply",
+        "ArithmeticClock.CyclicTwirl.twirl_eq_one_of_diagonal_one",
+        "ArithmeticClock.DenseTwirl.weights_injective",
+        "ArithmeticClock.DenseTwirl.spectralCarrier_diagonal",
+        "ArithmeticClock.DenseTwirl.actual_dense_twirl",
+        "ArithmeticClock.RealClock60.lift_realOrbit",
+        "ArithmeticClock.RealClock60.realOrbit_twirl"
+      ]
+    },
+    {
+      "id": "C-CONTINUOUS",
+      "kind": "corollary",
+      "endpoints": [
+        "ArithmeticClock.RealClock60.orbit_crossblock",
+        "ArithmeticClock.RealClock60.flowOrbit_return_frequencies",
+        "ArithmeticClock.RealClock60.flowOrbit_return_lattice",
+        "ArithmeticClock.RealClock60.flow_integer_period",
+        "ArithmeticClock.RealClock60.flowOrbit_return_iff",
+        "ArithmeticClock.RealClock60.flowOrbit_periodic",
+        "ArithmeticClock.RealClock60.flowOrbit_no_return_between"
+      ]
+    },
+    {
+      "id": "T5",
+      "kind": "main_theorem",
+      "endpoints": [
+        "ArithmeticClock.CyclicTwirl.cyclicCharacter_orderOf_nat",
+        "ArithmeticClock.CyclicTwirl.cyclicCharacter_pow_eq_one_iff",
+        "ArithmeticClock.CyclicTwirl.frequency29_sampled_orders",
+        "ArithmeticClock.CyclicTwirl.frequency13_sampled_orders",
+        "ArithmeticClock.CyclicTwirl.frequency29_primitive_roots",
+        "ArithmeticClock.CyclicTwirl.frequency13_primitive_roots"
+      ]
+    },
+    {
+      "id": "S-ACTIVE-BLOCKS",
+      "kind": "support",
+      "endpoints": [
+        "ArithmeticClock.DenseCarrier.crossBlock_1_60_2_30",
+        "ArithmeticClock.DenseCarrier.crossBlock_3_20_6_10",
+        "ArithmeticClock.DenseCarrier.block60_differenceWeight",
+        "ArithmeticClock.DenseCarrier.block60_sumWeight",
+        "ArithmeticClock.DenseCarrier.block60_differenceWeight_pos",
+        "ArithmeticClock.DenseCarrier.block60_sumWeight_pos",
+        "ArithmeticClock.DenseCarrier.displacement_decomposition"
+      ]
+    },
+    {
+      "id": "T6",
+      "kind": "main_theorem",
+      "endpoints": [
+        "ArithmeticClock.CyclicTwirl.prime61",
+        "ArithmeticClock.CyclicTwirl.field61_two_order",
+        "ArithmeticClock.CyclicTwirl.field61_two_primitive",
+        "ArithmeticClock.CyclicTwirl.field61Generator",
+        "ArithmeticClock.CyclicTwirl.field61Generator_order"
+      ]
+    },
+    {
+      "id": "S-ACTUAL-POSITIVITY",
+      "kind": "support",
+      "endpoints": [
+        "ArithmeticClock.DivisorGram60.divisorMap_bijective",
+        "ArithmeticClock.DivisorGram60.divisorEquiv",
+        "ArithmeticClock.DivisorGram60.realCarrier_eq_reindex",
+        "ArithmeticClock.DivisorGram60.complexCarrier_eq_lift_reindex",
+        "ArithmeticClock.DivisorGram60.realCarrier_posDef",
+        "ArithmeticClock.DivisorGram60.realCarrier_isUnit",
+        "ArithmeticClock.DivisorGram60.flowCarrier_posDef",
+        "ArithmeticClock.DivisorGram60.realOrbit_posDef"
+      ]
+    }
+  ]
+}

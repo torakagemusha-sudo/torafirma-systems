@@ -1,0 +1,1271 @@
+{
+  "schema_version": 1,
+  "project": "arithmetic-clock",
+  "toolchain": {
+    "lean_version": "4.19.0",
+    "lean_commit": "6caaee842e94",
+    "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+  },
+  "modules": [
+    {
+      "module": "ArithmeticClock.CyclicCharacters",
+      "source": "ArithmeticClock/CyclicCharacters.lean",
+      "sha256": "d1f49080ee3eb49e5db2967824e4ccff0d9d948944c4d2b3a0abcbe9b99c9cac",
+      "bytes": 1562,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.DenseCarrier",
+      "source": "ArithmeticClock/DenseCarrier.lean",
+      "sha256": "3c24e279cf5605e525ad19d92ecc38fffcb2cc8e69b14b6762a8f6d556402223",
+      "bytes": 12319,
+      "imports": [
+        "Mathlib.Data.Real.Sqrt",
+        "Mathlib.NumberTheory.Divisors",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+        "Mathlib.Data.Matrix.Notation",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.CyclicTwirl",
+      "source": "ArithmeticClock/CyclicTwirl.lean",
+      "sha256": "0db66fbf58f8c400b72bf71804207e35edec3248db774543e2993d3c21e3597b",
+      "bytes": 11366,
+      "imports": [
+        "ArithmeticClock.CyclicCharacters",
+        "Mathlib.Data.Matrix.ConjTranspose"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.DenseTwirl",
+      "source": "ArithmeticClock/DenseTwirl.lean",
+      "sha256": "d606302fca374a24e2901fba2cabf2176e0c5237abb78f78cdde41855179b945",
+      "bytes": 7027,
+      "imports": [
+        "ArithmeticClock.DenseCarrier",
+        "ArithmeticClock.CyclicTwirl",
+        "Mathlib.Data.Matrix.Block"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.DivisorGram",
+      "source": "ArithmeticClock/DivisorGram.lean",
+      "sha256": "cd3324483f3ebeefe0fa51ae0d1c56bcc2ed3d86575a99752bf87dc94bde0081",
+      "bytes": 10284,
+      "imports": [
+        "ArithmeticClock.DenseCarrier",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Block",
+        "Mathlib.Data.Real.StarOrdered",
+        "Mathlib.NumberTheory.ArithmeticFunction"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.RealClock60",
+      "source": "ArithmeticClock/RealClock60.lean",
+      "sha256": "0964791a01059acaaaefb109ef469314506e3ffb2da62ce1f294a6a12dcf9eed",
+      "bytes": 12290,
+      "imports": [
+        "ArithmeticClock.DenseTwirl"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.DivisorGram60",
+      "source": "ArithmeticClock/DivisorGram60.lean",
+      "sha256": "5d8db31dce05f4bbd70ca31aa1d789b76c115f57b39fe6fa6d70fa4e884b80fe",
+      "bytes": 2806,
+      "imports": [
+        "ArithmeticClock.DivisorGram",
+        "ArithmeticClock.RealClock60"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "source": "ArithmeticClock/ContinuousReturn60.lean",
+      "sha256": "f95fa07f7fb70340ca461b020fafac455f2828db641dc2cc865ab39b1ee1c1a0",
+      "bytes": 3598,
+      "imports": [
+        "ArithmeticClock.RealClock60"
+      ]
+    },
+    {
+      "module": "ArithmeticClock.IntegerClock60",
+      "source": "ArithmeticClock/IntegerClock60.lean",
+      "sha256": "31cb6d86e1c42bc80d9970e05d8d5871b7e8b282a52520e0e22a953c31f6f817",
+      "bytes": 1140,
+      "imports": [
+        "ArithmeticClock.ContinuousReturn60"
+      ]
+    }
+  ],
+  "entries": [
+    "ArithmeticClock.DivisorGram60",
+    "ArithmeticClock.ContinuousReturn60",
+    "ArithmeticClock.IntegerClock60"
+  ],
+  "declarations": [
+    {
+      "name": "ArithmeticClock.CyclicCharacters.cyclicCharacter",
+      "module": "ArithmeticClock.CyclicCharacters",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.CyclicCharacters.cyclicCharacter_apply",
+      "module": "ArithmeticClock.CyclicCharacters",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicCharacters.cyclicCharacter_intCast",
+      "module": "ArithmeticClock.CyclicCharacters",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicCharacters.cyclicCharacter_orthogonality",
+      "module": "ArithmeticClock.CyclicCharacters",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicCharacters.cyclicCharacter_sub",
+      "module": "ArithmeticClock.CyclicCharacters",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicCharacters.cyclicCharacter_neg",
+      "module": "ArithmeticClock.CyclicCharacters",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.divisorCount",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.kernel",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.crossBlock",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.normSq",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.inner",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.differenceWeight",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.sumWeight",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.rotation",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.rotateBlock",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.normSq_sub",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.weights_sum",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.differenceWeight_nonneg",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.sumWeight_nonneg",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.normSq_rotateBlock",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.inner_rotateBlock",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.displacement_decomposition",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.block60",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.kernel_nonneg",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.kernel_one_two",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.reciprocal_sqrt_two",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.reciprocal_sqrt_six",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.sqrt_two_mul_sqrt_six",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.block60_differenceWeight",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.block60_sumWeight",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.block60_differenceWeight_pos",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.block60_sumWeight_pos",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.differenceWeight_ge_half",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.differenceWeight_crossBlock_one_ge_half",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.divisorCounts60",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.crossBlock_1_60_2_30",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.crossBlock_3_20_6_10",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.block60_displacement",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.normSq_nonneg",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.normSq_eq_zero_iff",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.rotateBlock_eq_iff",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.block60_stabilizer",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.crossBlock_1_60_2_30_stabilizer",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseCarrier.crossBlock_3_20_6_10_stabilizer",
+      "module": "ArithmeticClock.DenseCarrier",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.stdAddChar_orderOf",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.cyclicCharacter_orderOf_nat",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.cyclicCharacter_primitive_nat",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.cyclicCharacter_pow_eq_one_iff",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.cyclicCharacter_frequency_sub",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.cyclicCharacter_difference_sum",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.diagonalClock",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.conjugation",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.twirl",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.diagonalClock_zero",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.diagonalClock_add",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.diagonalClock_conjTranspose",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.diagonalClock_mul_conjTranspose",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.conjugation_apply",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.twirl_apply",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.twirl_idempotent",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.twirl_of_injective",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.twirl_eq_one_of_diagonal_one",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.stationary_iff_equal_weight_blocks",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.weights60",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.weights60_injective",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.weights60_ne_zero",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.weights60_ne_half",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.weights60_negation_closed",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.weights60_difference_29",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.weights60_difference_13",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.diagonalClock60_injective",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.frequency29_sampled_orders",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.frequency13_sampled_orders",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.frequency29_primitive_roots",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.frequency13_primitive_roots",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.twirl60_diagonal",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.twirl60_eq_one",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.prime61",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.field61_two_order",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.field61_two_primitive",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.field61Generator",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.CyclicTwirl.field61Generator_order",
+      "module": "ArithmeticClock.CyclicTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.low",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.high",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.divisor",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.phase",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.weights",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.carrier",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.planeBasis",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.basis",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.spectralCarrier",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.weights_injective",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.divisorCount_pos",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.carrier_diagonal",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.carrier_symmetric",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.planeBasis_unitary",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.planeBasis_diagonalizes",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.spectralCarrier_basis_change",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.basis_unitary",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.spectralCarrier_diagonal",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.actual_dense_twirl",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.spectralCarrier_entry_re",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.spectralCarrier_entry_ne_zero",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.actual_dense_return_iff",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.actual_dense_nat_return_iff",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DenseTwirl.actual_dense_sampled_returns",
+      "module": "ArithmeticClock.DenseTwirl",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.Divisor",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "abbrev"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.incidence",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.normalizer",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.feature",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernelMatrix",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.divisor_pos",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.divisorCount_pos",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.sqrt_divisorCount_pos",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.incidence_diagonal",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.incidence_lowerTriangular",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.incidence_det",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.incidence_gram_apply",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.feature_apply",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_gram_factorization",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.feature_det",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.feature_det_pos",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.feature_isUnit",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_posDef",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_isUnit",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_det_pos",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_det",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_diagonal",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_inverse_posDef",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.mobiusIncidence",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.mobius_mul_incidence",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.incidence_inverse",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.incidence_mul_mobius",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.precisionFactor",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.precisionFactor_apply",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.feature_mul_precisionFactor",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.precisionFactor_mul_feature",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.feature_inverse",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram.kernel_inverse_factorization",
+      "module": "ArithmeticClock.DivisorGram",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.delta",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.angle",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.clock",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.realCarrier",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.realOrbit",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.divisor_enumeration",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.divisor_injective",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.complementary_planes",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.phase_eq_delta",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_injective",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_mul",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_transpose",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_realCarrier",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.basis_unitary_right",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.character_integer",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.character_representative",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.character_negative",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.character_sign",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.clock_intertwines",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.clock_basis_change",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.carrier_transport",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_realOrbit",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.transport_injective",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.realOrbit_return_iff",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.realOrbit_sampled_returns",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_one",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_smul",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.lift_sum",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.realOrbit_twirl",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.transport_mul",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.clock_zero",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.clock_add",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.clock_transpose",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.clock_orthogonal",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow_zero",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow_add",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow_transpose",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow_orthogonal",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.continuous_flow",
+      "module": "ArithmeticClock.RealClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.divisorMap",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.divisorMap_bijective",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.divisorEquiv",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.realCarrier_eq_reindex",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.complexCarrier_eq_lift_reindex",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.posDef_reindex",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.realCarrier_posDef",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.realCarrier_isUnit",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.flowCarrier_posDef",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.DivisorGram60.realOrbit_posDef",
+      "module": "ArithmeticClock.DivisorGram60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flowOrbit",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "def"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.orbit_crossblock",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.carrier_crossblock",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flowOrbit_return_frequencies",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flowOrbit_return_lattice",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow_integer_period",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flowOrbit_return_iff",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow_periodic",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flowOrbit_periodic",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flowOrbit_no_return_between",
+      "module": "ArithmeticClock.ContinuousReturn60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.flow_integer_eq_clock",
+      "module": "ArithmeticClock.IntegerClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.integer_clock_basis_change",
+      "module": "ArithmeticClock.IntegerClock60",
+      "kind": "theorem"
+    },
+    {
+      "name": "ArithmeticClock.RealClock60.integer_flowOrbit_eq_realOrbit",
+      "module": "ArithmeticClock.IntegerClock60",
+      "kind": "theorem"
+    }
+  ],
+  "kind_totals": {
+    "theorem": 161,
+    "def": 41,
+    "abbrev": 1
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "negative_controls": [
+    {
+      "name": "wrong_period",
+      "source": "controls/WrongPeriod.lean",
+      "sha256": "fad53d5c2641f778c598a9acb80667ed964e576a6ea78d4b071f522c6c44535b"
+    }
+  ],
+  "facade": {
+    "source": "ArithmeticClock.lean",
+    "sha256": "a6d22fb69f3f8ec035b01209194923f3d78c96bad5214fec1fe42d331d327da7",
+    "bytes": 117,
+    "imports": [
+      "ArithmeticClock.DivisorGram60",
+      "ArithmeticClock.ContinuousReturn60",
+      "ArithmeticClock.IntegerClock60"
+    ]
+  },
+  "public_files": [
+    {
+      "path": "ArithmeticClock.lean",
+      "sha256": "a6d22fb69f3f8ec035b01209194923f3d78c96bad5214fec1fe42d331d327da7",
+      "bytes": 117
+    },
+    {
+      "path": "ArithmeticClock/ContinuousReturn60.lean",
+      "sha256": "f95fa07f7fb70340ca461b020fafac455f2828db641dc2cc865ab39b1ee1c1a0",
+      "bytes": 3598
+    },
+    {
+      "path": "ArithmeticClock/CyclicCharacters.lean",
+      "sha256": "d1f49080ee3eb49e5db2967824e4ccff0d9d948944c4d2b3a0abcbe9b99c9cac",
+      "bytes": 1562
+    },
+    {
+      "path": "ArithmeticClock/CyclicTwirl.lean",
+      "sha256": "0db66fbf58f8c400b72bf71804207e35edec3248db774543e2993d3c21e3597b",
+      "bytes": 11366
+    },
+    {
+      "path": "ArithmeticClock/DenseCarrier.lean",
+      "sha256": "3c24e279cf5605e525ad19d92ecc38fffcb2cc8e69b14b6762a8f6d556402223",
+      "bytes": 12319
+    },
+    {
+      "path": "ArithmeticClock/DenseTwirl.lean",
+      "sha256": "d606302fca374a24e2901fba2cabf2176e0c5237abb78f78cdde41855179b945",
+      "bytes": 7027
+    },
+    {
+      "path": "ArithmeticClock/DivisorGram.lean",
+      "sha256": "cd3324483f3ebeefe0fa51ae0d1c56bcc2ed3d86575a99752bf87dc94bde0081",
+      "bytes": 10284
+    },
+    {
+      "path": "ArithmeticClock/DivisorGram60.lean",
+      "sha256": "5d8db31dce05f4bbd70ca31aa1d789b76c115f57b39fe6fa6d70fa4e884b80fe",
+      "bytes": 2806
+    },
+    {
+      "path": "ArithmeticClock/IntegerClock60.lean",
+      "sha256": "31cb6d86e1c42bc80d9970e05d8d5871b7e8b282a52520e0e22a953c31f6f817",
+      "bytes": 1140
+    },
+    {
+      "path": "ArithmeticClock/RealClock60.lean",
+      "sha256": "0964791a01059acaaaefb109ef469314506e3ffb2da62ce1f294a6a12dcf9eed",
+      "bytes": 12290
+    },
+    {
+      "path": "CLAIM_MAP.json",
+      "sha256": "e57d93c48c6b4a7a65871cec3fb8746eebc218a86293c8b872d8f5861de73bff",
+      "bytes": 5720
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "sha256": "5ff12159d4bf4a7930b85451dff1db6c72cd1008a07d6e2da098e0d2f0d31db2",
+      "bytes": 533
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "README.md",
+      "sha256": "2c50c39047ad1beaf00367d5e8b88176de5b13d51f9c3f9b8bb5fa76a5620349",
+      "bytes": 856
+    },
+    {
+      "path": "__init__.py",
+      "sha256": "0f600a0f7a49ce9fa445ab1f40a51f3d6b08d41fbb18ea110ee004e0ef06f219",
+      "bytes": 47
+    },
+    {
+      "path": "controls/WrongPeriod.lean",
+      "sha256": "fad53d5c2641f778c598a9acb80667ed964e576a6ea78d4b071f522c6c44535b",
+      "bytes": 256
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "73d7a3907b321f9572b8081ca5eb7bce4eebcc0a3b4e74c869b8c0b06f832e5c",
+      "bytes": 205
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+      "bytes": 25
+    },
+    {
+      "path": "tests/test_verify.py",
+      "sha256": "e27a727f4bfba0ad3faa18235a6f020633b44bc5f294d7468f418b36ccf4f562",
+      "bytes": 94834
+    },
+    {
+      "path": "tools/__init__.py",
+      "sha256": "ac3e3b2f75e77694dfd16b92529918f9113afbb186eb605410148eaeeaddc5e6",
+      "bytes": 32
+    },
+    {
+      "path": "tools/pack_common.py",
+      "sha256": "6f0962ea1e465f02430d633485871dd6e248da8620b5ef39503bdc9ae67d55e3",
+      "bytes": 14449
+    },
+    {
+      "path": "tools/package_release.py",
+      "sha256": "6a36ea24fbb4bb0cec30d996e3bc846e39277265aeb16e978124d29fe905da04",
+      "bytes": 36707
+    },
+    {
+      "path": "tools/verify.py",
+      "sha256": "fc6bcce617e4bda9f85735df63130ac4a16f8bdb9a1676859b80d6659a98abaf",
+      "bytes": 89422
+    }
+  ]
+}
