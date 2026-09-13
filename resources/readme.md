@@ -21,6 +21,10 @@ The curriculum includes multiple study pathways, competency criteria, practical 
 
 **It is intended as a rigorous public reference and research-development framework, not as an accredited qualification or substitute for formal professional certifications.**
 
+### Related public formalization
+
+- [Arithmetic Clock — Lean 4 proof pack](../arithmetic-clock/) · [v1.0.0 release](https://github.com/torakagemusha-sudo/torafirma-systems/releases/tag/arithmetic-clock-v1.0.0)
+
 ---
 
 Torafirma Systems 2026.

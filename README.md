@@ -16,6 +16,8 @@ Public benchmark material for ORBIT. The current report covers full-vocabulary a
 ### [Arithmetic Clock](arithmetic-clock/)
 Lean 4 proof pack for the finite arithmetic clock on the divisor lattice of 60, including pinned dependencies, claim map, negative control, build artefacts, and seven verification certificates.
 
+- [Arithmetic Clock Proof Pack v1.0.0](https://github.com/torakagemusha-sudo/torafirma-systems/releases/tag/arithmetic-clock-v1.0.0)
+
 ### [resources](resources/)
 - Documents and educational materials
 
