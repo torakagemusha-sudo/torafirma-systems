@@ -1,3 +1,9 @@
+[![ZPA-LM CI](https://github.com/torakagemusha-sudo/torafirma-systems/actions/workflows/zpa-lm-reference.yml/badge.svg)](https://github.com/torakagemusha-sudo/torafirma-systems/actions/workflows/zpa-lm-reference.yml)
+[![Arithmetic Clock certificates](https://github.com/torakagemusha-sudo/torafirma-systems/actions/workflows/arithmetic-clock-certificates.yml/badge.svg)](https://github.com/torakagemusha-sudo/torafirma-systems/actions/workflows/arithmetic-clock-certificates.yml)
+[![Repo health](https://github.com/torakagemusha-sudo/torafirma-systems/actions/workflows/repo-health.yml/badge.svg)](https://github.com/torakagemusha-sudo/torafirma-systems/actions/workflows/repo-health.yml)
+[![Site](https://img.shields.io/badge/web-torafirma.com-0D3B4C)](https://torafirma.com)
+[![Academia](https://img.shields.io/badge/papers-Academia.edu-2E86AB)](https://independent.academia.edu/ThomasHelm3)
+
 ## Projects
 
 ### Good-faith access - Read first
@@ -21,6 +27,9 @@ Lean 4 proof pack for the finite arithmetic clock on the divisor lattice of 60, 
 ### [resources](resources/)
 - Documents and educational materials
 
+### [Gizmos](gizmos/)
+Status board, badge pack, local certificate-check script, and visibility linkage notes for the public surface.
+
 ### Firmastate-IDE
 Available at www.firmastate-ide.app
 
@@ -35,3 +44,7 @@ Repository history, release artefacts, citation records, and per-project rights 
 **Published evidence is classified explicitly. Algebraic results, local execution, hosted CI, and open empirical questions are not treated as interchangeable forms of support.**
 
 Copyright © 2026 Torafirma Systems. Rights and reuse terms are stated inside each project directory.
+
+## Support & security
+- [SUPPORT.md](SUPPORT.md) — channels and expectations
+- [SECURITY.md](SECURITY.md) — vulnerability reporting

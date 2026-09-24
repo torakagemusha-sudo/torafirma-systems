@@ -1,0 +1,49 @@
+name: Arithmetic Clock certificate presence
+
+on:
+  push:
+    paths:
+      - "arithmetic-clock/**"
+      - ".github/workflows/arithmetic-clock-certificates.yml"
+  pull_request:
+    paths:
+      - "arithmetic-clock/**"
+      - ".github/workflows/arithmetic-clock-certificates.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certificates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Required certificates present
+        run: |
+          set -euo pipefail
+          dir="arithmetic-clock/verification/certificates"
+          required=(
+            AXIOM_CERTIFICATE.json
+            BUILD_CERTIFICATE.json
+            CONTROL_CERTIFICATE.json
+            DECLARATION_CERTIFICATE.json
+            PRIVACY_CERTIFICATE.json
+            REPRODUCIBILITY_CERTIFICATE.json
+            SOURCE_CERTIFICATE.json
+          )
+          for f in "${required[@]}"; do
+            test -f "$dir/$f" || { echo "MISSING: $f"; exit 1; }
+            echo "OK: $f ($(wc -c < "$dir/$f") bytes)"
+          done
+
+      - name: MANIFEST and claim map present
+        run: |
+          test -f arithmetic-clock/MANIFEST.json
+          test -f arithmetic-clock/CLAIM_MAP.json
+          test -f arithmetic-clock/SHA256SUMS
+          echo "Core pack files present."

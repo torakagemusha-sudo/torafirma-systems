@@ -1,0 +1,45 @@
+name: Verification / Reproduction Report
+description: Report results from independent verification or reproduction of a published artefact.
+title: "[verify] "
+labels: ["verification", "good-faith"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for verifying work in good faith. Please preserve attribution and claim boundaries.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - ZPA-LM Reference
+        - Arithmetic Clock
+        - ORBIT
+        - Other / multiple
+    validations:
+      required: true
+  - type: input
+    id: artefact
+    attributes:
+      label: Artefact / version / tag
+      placeholder: e.g. arithmetic-clock-v1.0.0 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python/Lean versions, hardware type (no serial numbers).
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: Pass / fail / partial, with evidence summary.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / deviations

@@ -1,0 +1,29 @@
+name: Research Question / Clarification
+description: Ask a technical or mathematical question about published material.
+title: "[research] "
+labels: ["research"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - ZPA-LM Reference
+        - Arithmetic Clock
+        - ORBIT
+        - Spectral / SCA / divisor-lattice (general)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Be precise. Cite claim IDs, theorem names, or file paths where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What you already tried or which paper/section you are reading.

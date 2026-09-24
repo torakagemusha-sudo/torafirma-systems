@@ -1,0 +1,52 @@
+name: Repo health
+
+on:
+  push:
+    paths:
+      - "README.md"
+      - "SECURITY.md"
+      - "SUPPORT.md"
+      - ".github/**"
+      - "**/NOTICE"
+      - "**/LICENSE"
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"  # weekly Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Core policy files exist
+        run: |
+          set -euo pipefail
+          for f in README.md SECURITY.md SUPPORT.md; do
+            test -f "$f" || { echo "MISSING root: $f"; exit 1; }
+          done
+          echo "Root policy files OK."
+
+      - name: Project NOTICE/LICENSE present
+        run: |
+          set -euo pipefail
+          test -f zpa-lm-reference/NOTICE
+          test -f arithmetic-clock/LICENSE
+          echo "Project rights notices OK."
+
+      - name: No obvious secrets in tracked text
+        run: |
+          set -euo pipefail
+          if grep -RInE --include='*.py' --include='*.md' --include='*.yml' --include='*.toml' --include='*.json' \
+            '(AKIA[0-9A-Z]{16}|-----BEGIN (RSA |OPENSSH )?PRIVATE KEY-----|xox[baprs]-)' . 2>/dev/null; then
+            echo "Possible secret pattern found"
+            exit 1
+          fi
+          echo "No obvious secret patterns in common text files."
