@@ -6,6 +6,8 @@
 
 **Thomas Helm · 2026 · Version 1.0.0 · 120 pages · English · A4 PDF**
 
+https://doi.org/10.5281/zenodo.23242103
+
 [Read or download the book](Eigenalgebra_Arithmetrics_v1.0_Textbook_A4.pdf)
 
 A research monograph on measurement geometry, divisor-channel structure, fibre entropy, self-interaction calculus, Jacobi/Toda operator machinery, and perspective-relative structural dynamics.
