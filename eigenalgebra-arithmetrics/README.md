@@ -6,7 +6,7 @@
 
 **Thomas Helm · 2026 · Version 1.0.0 · 120 pages · English · A4 PDF**
 
-https://doi.org/10.5281/zenodo.23242103
+[Version DOI: 10.5281/zenodo.23242103](https://doi.org/10.5281/zenodo.23242103) · [Zenodo record](https://zenodo.org/records/23242103)
 
 [Read or download the book](Eigenalgebra_Arithmetrics_v1.0_Textbook_A4.pdf)
 
@@ -16,13 +16,15 @@ The book distinguishes exact algebraic results, numerical verification, empirica
 
 ## Citation
 
-Helm, Thomas. 2026. *Eigenalgebra Arithmetrics: Measurement, Geometry, and the Architecture of What Survives: Perspective, Self-Interaction, and Divisor-Channel Geometry*. Version 1.0.0. 120 pp.
+Helm, Thomas. 2026. *Eigenalgebra Arithmetrics: Measurement, Geometry, and the Architecture of What Survives: Perspective, Self-Interaction, and Divisor-Channel Geometry*. Version 1.0.0. 120 pp. [doi:10.5281/zenodo.23242103](https://doi.org/10.5281/zenodo.23242103).
 
 - [BibTeX citation](eigenalgebra_arithmetrics_v1.0.bib)
 - [Citation File Format](CITATION.cff), with the book in `preferred-citation`
 - [Publication metadata](metadata.json)
 
 ## Version and file integrity
+
+Use the [version-specific DOI](https://doi.org/10.5281/zenodo.23242103) to cite this exact v1.0.0 release. The [concept DOI: 10.5281/zenodo.23242102](https://doi.org/10.5281/zenodo.23242102) identifies the work across versions.
 
 This is the exact frozen v1.0 PDF, without changes to its text or bytes. The release metadata uses semantic version `1.0.0` and publication date `2026-10-06`. The canonical byte freeze was `2026-10-06T11:38:08Z`.
 

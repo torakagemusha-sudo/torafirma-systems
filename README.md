@@ -14,7 +14,7 @@ Public release of future reference implementations remains discretionary. If thi
 ### [Eigenalgebra Arithmetrics](eigenalgebra-arithmetrics/)
 Thomas Helm's 120-page research monograph, *Measurement, Geometry, and the Architecture of What Survives*, version 1.0.0 (2026).
 
-- [Read or download the book](eigenalgebra-arithmetrics/Eigenalgebra_Arithmetrics_v1.0_Textbook_A4.pdf) · [Citation and file integrity](eigenalgebra-arithmetrics/#citation) · [Rights notice](eigenalgebra-arithmetrics/NOTICE)
+- [Read or download the book](eigenalgebra-arithmetrics/Eigenalgebra_Arithmetrics_v1.0_Textbook_A4.pdf) · [Version DOI](https://doi.org/10.5281/zenodo.23242103) · [Citation and file integrity](eigenalgebra-arithmetrics/#citation) · [Rights notice](eigenalgebra-arithmetrics/NOTICE)
 
 ### [ZPA-LM Reference](zpa-lm-reference/)
 A paper-conformant reference implementation of the static divisor/Fisher token mixer described in *ZPA-LM: Parameter-Free Attention via the Divisor Kernel*.

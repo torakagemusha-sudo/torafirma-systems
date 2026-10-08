@@ -29,5 +29,10 @@
     "spectral dynamics",
     "perspective-relative structural dynamics",
     "arithmetic dynamics"
-  ]
+  ],
+  "doi": "10.5281/zenodo.23242103",
+  "doi_url": "https://doi.org/10.5281/zenodo.23242103",
+  "zenodo_record_url": "https://zenodo.org/records/23242103",
+  "concept_doi": "10.5281/zenodo.23242102",
+  "concept_doi_url": "https://doi.org/10.5281/zenodo.23242102"
 }
