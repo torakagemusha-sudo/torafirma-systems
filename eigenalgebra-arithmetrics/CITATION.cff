@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the book using the preferred-citation metadata below."
+title: "Eigenalgebra Arithmetrics: publication archive"
+authors:
+  - family-names: Helm
+    given-names: Thomas
+version: "1.0.0"
+date-released: "2026-10-06"
+url: "https://github.com/torakagemusha-sudo/torafirma-systems/tree/main/eigenalgebra-arithmetrics"
+preferred-citation:
+  type: book
+  title: "Eigenalgebra Arithmetrics: Measurement, Geometry, and the Architecture of What Survives: Perspective, Self-Interaction, and Divisor-Channel Geometry"
+  authors:
+    - family-names: Helm
+      given-names: Thomas
+  year: 2026
+  month: 10
+  version: "1.0.0"
+  url: "https://github.com/torakagemusha-sudo/torafirma-systems/tree/main/eigenalgebra-arithmetrics"
+  identifiers:
+    - type: other
+      value: "sha256:e42dd29fb22cdcac0d73fe20cc441a85fcaa54bbd7d5d0fd19beb32a68e0fdd6"
+      description: "SHA-256 of the immutable 120-page v1.0 PDF"

@@ -1,0 +1,33 @@
+{
+  "title": "Eigenalgebra Arithmetrics",
+  "subtitle": "Measurement, Geometry, and the Architecture of What Survives",
+  "secondary_subtitle": "Perspective, Self-Interaction, and Divisor-Channel Geometry",
+  "author": "Thomas Helm",
+  "resource_type": "book",
+  "version": "1.0.0",
+  "publication_date": "2026-10-06",
+  "canonical_byte_freeze": "2026-10-06T11:38:08Z",
+  "language": "en",
+  "pages": 120,
+  "format": "application/pdf",
+  "page_format": "ISO A4",
+  "file": {
+    "filename": "Eigenalgebra_Arithmetrics_v1.0_Textbook_A4.pdf",
+    "size_bytes": 512550,
+    "sha256": "e42dd29fb22cdcac0d73fe20cc441a85fcaa54bbd7d5d0fd19beb32a68e0fdd6"
+  },
+  "copyright": "Copyright © 2026 Thomas Helm. All rights reserved.",
+  "repository_url": "https://github.com/torakagemusha-sudo/torafirma-systems/tree/main/eigenalgebra-arithmetrics",
+  "keywords": [
+    "Eigenalgebra Arithmetrics",
+    "measurement geometry",
+    "divisor geometry",
+    "fibre entropy",
+    "self-interaction calculus",
+    "Jacobi operators",
+    "Toda lattice",
+    "spectral dynamics",
+    "perspective-relative structural dynamics",
+    "arithmetic dynamics"
+  ]
+}
