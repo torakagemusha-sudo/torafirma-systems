@@ -17,6 +17,7 @@ This directory contains the manuscript PDF and publication metadata. Source file
 ## Citation
 
 Helm, Thomas (2026). *Four-Point Exponential Metric Kernels and Minimal Five-State Obstructions to Markov Embedding*. v0.2-rc1, corrected preprint candidate. Torafirma Systems. https://github.com/torakagemusha-sudo/torafirma-systems/tree/main/markov-embedding
+ORCID: https://orcid.org/0009-0003-9964-768X
 
 No DOI is asserted for this manuscript version. This GitHub upload is not a Zenodo deposit or a claim of journal acceptance.
 
