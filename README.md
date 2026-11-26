@@ -15,7 +15,7 @@ Public release of future reference implementations remains discretionary. If thi
 
 Three manuscript versions published on 8 October 2026. Each directory contains its PDF, citation, evidence limits, checksums, and a separate rights notice. These are preprint candidates or a methods manuscript; no journal acceptance or complete formal verification is implied.
 
-- [Four-Point Exponential Metric Kernels and Minimal Five-State Obstructions to Markov Embedding](markov-embedding/) — corrected candidate v0.2-rc1, 18 pages
+- [Four-Point Exponential Metric Kernels and Minimal Five-State Obstructions to Markov Embedding](markov-embedding/) — corrected candidate v0.2-rc1, 18 pages ORCID: [0009-0003-9964-768X](https://orcid.org/0009-0003-9964-768X)
 - [Chiral Jacobi–Cayley Dynamics](chiral-jacobi-cayley/) — corrected candidate v1.1, 16 pages; preserves the 25 July 2026 preprint lineage
 - [Conceptual Machine Engineering: Realization Contracts and Evidence-Governed Systems](conceptual-machine-engineering/) — methods manuscript v0.1, 13 pages
 
