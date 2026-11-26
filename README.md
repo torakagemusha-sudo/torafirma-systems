@@ -44,7 +44,6 @@ Lean 4 proof pack for the finite arithmetic clock on the divisor lattice of 60, 
 Status board, badge pack, local certificate-check script, and visibility linkage notes for the public surface.
 
 ### Firmastate-IDE
-Available at www.firmastate-ide.app
 
 Pre commercial implementation of our governed state machine IDE, open for public engagement and feedback.
 
